@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+    <TextView android:id="@+id/copy_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="ⓒ2015 二子科技"
+        android:textSize="14sp"/>
+   
+            
+                
+             
+             <EditText
+                 android:id="@+id/uname"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:hint="手机号"
+                  />
+             <EditText
+                 android:id="@+id/upwd"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/uname"
+                  android:hint="密码"
+                  />
+             
+             <Button 
+                  android:id="@+id/btnsignin"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@id/upwd"
+                  android:text="登录"
+                  android:gravity="center"
+                  android:layout_centerHorizontal="true"
+                  android:background="@drawable/btn_signin"/>
+
+             <ImageView
+                 android:id="@+id/signin_studioicon"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_above="@+id/uname"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginBottom="80dp"
+                 android:src="@drawable/signin_log" />
+             
+             <ImageView
+                 android:id="@+id/wx_icon"
+                 android:layout_width="40dp"
+                 android:layout_height="40dp"
+                 android:layout_alignParentLeft="true"
+                 android:layout_below="@id/btnsignin"
+                 android:src="@drawable/wxicon" />
+
+               <ImageView
+                   android:id="@+id/qq_icon"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                  
+                   android:layout_below="@id/btnsignin"
+                   android:layout_toRightOf="@+id/wx_icon"
+                   android:src="@drawable/qqicon" />
+
+                 <ImageView
+                     android:id="@+id/wb_icon"
+                     android:layout_width="40dp"
+                     android:layout_height="40dp"
+                     
+                     android:layout_below="@id/btnsignin"
+                     android:layout_toRightOf="@id/qq_icon"
+                     android:src="@drawable/wbicon" />
+                 
+                 <TextView 
+                     android:id="@+id/forget_pwd"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="忘记密码？"
+                     android:textSize="20sp"
+                     android:layout_below="@id/btnsignin"
+                     android:layout_alignParentRight="true"/>
+    
+</RelativeLayout>

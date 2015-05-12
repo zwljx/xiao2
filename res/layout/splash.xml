@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff">
+    <TextView android:id="@+id/copy_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dip"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="ⓒ2015 二子科技"
+        android:textSize="14sp"/>
+   
+            
+                <ImageView android:id="@+id/studio_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/logo"/>
+             
+          
+            
+           
+            
+    
+</RelativeLayout>

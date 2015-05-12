@@ -1,0 +1,315 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#efeff4" >
+     
+    <LinearLayout
+        android:id="@+id/doacc_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/acbar_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/accset_back"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+         
+            android:clickable="true"
+            android:src="@drawable/con_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text="张三"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+     <LinearLayout
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:text="记账周期" 
+            />
+       
+        <EditText
+            android:id="@+id/timestart"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:hint="起始日期"
+            android:textColor="#000000" />
+           <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="----" 
+            />
+        <EditText
+            android:id="@+id/timeend"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+             android:layout_marginLeft="10dp"
+            android:hint="结束日期"
+            android:textColor="#000000" />
+      </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/accsetbg1"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/profitA"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="利润A" />
+
+        <EditText
+            android:id="@+id/Atypename"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/profitA"
+            android:layout_toRightOf="@id/profitA"
+            android:hint="名称"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/Aprice"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/Atypename"
+            android:layout_toRightOf="@id/Atypename"
+            android:hint="￥50.00"
+            android:textColor="#000000" />
+
+         <TextView
+             android:id="@+id/Aremarks"
+             android:layout_width="40dp"
+             android:layout_height="30dp"
+              android:layout_marginBottom="30dp"
+             android:layout_alignLeft="@id/profitA"
+             android:layout_below="@id/profitA"
+             android:gravity="bottom"
+             android:text="备注" />
+
+          <EditText
+              android:id="@+id/edtAremarks"
+              android:layout_width="300dp"
+              android:layout_height="40dp"
+               android:layout_marginBottom="25dp"
+              android:layout_alignLeft="@id/Atypename"
+              android:layout_below="@id/Atypename"
+              android:layout_toRightOf="@id/Aremarks"
+              android:hint="备注"
+              android:textColor="#000000" >
+
+          </EditText>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/accsetbg1"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/profitB"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="利润B" />
+
+        <EditText
+            android:id="@+id/Btypename"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/profitB"
+            android:layout_toRightOf="@id/profitB"
+            android:hint="名称"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/Bprice"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/Btypename"
+            android:layout_toRightOf="@id/Btypename"
+            android:hint="￥100.00"
+            android:textColor="#000000" />
+
+         <TextView
+             android:id="@+id/Bremarks"
+             android:layout_width="40dp"
+             android:layout_height="30dp"
+              android:layout_marginBottom="30dp"
+             android:layout_alignLeft="@id/profitB"
+             android:layout_below="@id/profitB"
+             android:gravity="bottom"
+             android:text="备注" />
+
+          <EditText
+              android:id="@+id/edtBremarks"
+              android:layout_width="300dp"
+              android:layout_height="40dp"
+               android:layout_marginBottom="25dp"
+              android:layout_alignLeft="@id/Btypename"
+              android:layout_below="@id/Btypename"
+              android:layout_toRightOf="@id/Bremarks"
+              android:hint="备注"
+              android:textColor="#000000" >
+
+          </EditText>
+
+    </RelativeLayout>
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/accsetbg2"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/profitC"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="利润C" />
+
+        <EditText
+            android:id="@+id/Ctypename"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/profitC"
+            android:layout_toRightOf="@id/profitC"
+            android:hint="名称"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/Cprice"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/Ctypename"
+            android:layout_toRightOf="@id/Ctypename"
+            android:hint="￥100.00"
+            android:textColor="#000000" />
+
+         <TextView
+             android:id="@+id/Cremarks"
+             android:layout_width="40dp"
+             android:layout_height="30dp"
+              android:layout_marginBottom="30dp"
+             android:layout_alignLeft="@id/profitC"
+             android:layout_below="@id/profitC"
+             android:gravity="bottom"
+             android:text="备注" />
+
+          <EditText
+              android:id="@+id/edtCremarks"
+              android:layout_width="300dp"
+              android:layout_height="40dp"
+               android:layout_marginBottom="25dp"
+              android:layout_alignLeft="@id/Ctypename"
+              android:layout_below="@id/Ctypename"
+              android:layout_toRightOf="@id/Cremarks"
+              android:hint="备注"
+              android:textColor="#000000" >
+
+          </EditText>
+
+    </RelativeLayout>
+        <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/accsetbg2"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:id="@+id/profitD"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="利润D" />
+
+        <EditText
+            android:id="@+id/Dtypename"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/profitD"
+            android:layout_toRightOf="@id/profitD"
+            android:hint="名称"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/Dprice"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@id/Dtypename"
+            android:layout_toRightOf="@id/Dtypename"
+            android:hint="￥100.00"
+            android:textColor="#000000" />
+
+         <TextView
+             android:id="@+id/Dremarks"
+             android:layout_width="40dp"
+             android:layout_height="30dp"
+              android:layout_marginBottom="30dp"
+             android:layout_alignLeft="@id/profitD"
+             android:layout_below="@id/profitD"
+             android:gravity="bottom"
+             android:text="备注" />
+
+          <EditText
+              android:id="@+id/edtDremarks"
+              android:layout_width="300dp"
+              android:layout_height="40dp"
+               android:layout_marginBottom="25dp"
+              android:layout_alignLeft="@id/Dtypename"
+              android:layout_below="@id/Dtypename"
+              android:layout_toRightOf="@id/Dremarks"
+              android:hint="备注"
+              android:textColor="#000000" >
+
+          </EditText>
+
+    </RelativeLayout>
+        <Button
+               android:id="@+id/accset_save"
+               android:layout_width="150dp"
+               android:layout_height="40dp"
+               android:layout_gravity="center"
+               android:layout_marginTop="10dp"
+               android:background="@drawable/doacc_save"
+               android:text="保存"
+               android:textSize="20sp"
+               android:textColor="#ff7f00" />
+</LinearLayout>
+

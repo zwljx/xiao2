@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_weight="1"
+        android:orientation="horizontal">
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部"/>
+        <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/noanswer"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未答"/>
+        <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/answerd"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已答"/>
+        <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/answering"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"/>
+        <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="回答中"/>
+
+    </RadioGroup>
+    <ListView
+            android:id="@+id/questions"
+            android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="13"
+             >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/favoqa_goque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/account_background"
+        android:text="答问题，赚积分"
+        android:textColor="#ffdda65f"
+        android:textSize="30sp" />
+    
+    </LinearLayout>
+    
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout   
+        android:layout_width="fill_parent"   
+        xmlns:android="http://schemas.android.com/apk/res/android"   
+        android:orientation="horizontal"  
+        android:layout_height="wrap_content"   
+        android:id="@+id/QuestionItem"   
+        >  
+        <ImageView   
+                android:layout_height="fill_parent"   
+                android:layout_width="wrap_content"   
+                android:id="@+id/ItemPic"   
+                >  
+        </ImageView>  
+        <TextView   
+                android:layout_height="45dp"   
+                android:layout_width="fill_parent"   
+                android:id="@+id/ItemTitle"
+                android:textSize="28sp"
+                android:singleLine="true">  
+        </TextView>  
+</LinearLayout>  

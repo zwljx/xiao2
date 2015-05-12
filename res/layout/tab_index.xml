@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+ <FrameLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/indextabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 下边这个linearlaylout是广告轮播banner的布局 -->
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        
+        android:orientation="vertical" >
+
+        <include layout="@layout/adbanner" />
+
+    </LinearLayout>
+
+    <!-- 下边是公告的区域 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#ccc"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/announce_area"
+            android:gravity="center_vertical"
+            android:text="公告信息： 店小二1.0上线了！"
+            android:textSize="18sp"
+            ></TextView>
+    </LinearLayout>
+
+    <!-- 下边是抢答的区域 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"    
+         >
+        <ImageButton 
+            android:id="@+id/qiang"
+            android:background="@drawable/qiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+        
+        
+    </RelativeLayout>
+    
+  
+</LinearLayout>
+</FrameLayout>

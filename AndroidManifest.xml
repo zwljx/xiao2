@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.xiao2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_drawermenu"
+        android:label="@string/app_name"
+         android:theme="@android:style/Theme.Holo.Light" >
+        
+        <activity
+            android:theme="@android:style/Theme.Holo.NoActionBar" 
+            android:name="com.app.xiao2.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.xiao2.SignInActivity"
+            android:theme="@android:style/Theme.Holo.NoActionBar"  >
+            <intent-filter>
+                <action android:name="com.app.xiao2.SignInActivity"/>    
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.app.xiao2.Xiao2Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.app.xiao2.Xiao2Home"/>    
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>
+        </activity>
+        <activity android:name="com.app.xiao2.MyInfoActivity"    
+                  android:label="@string/myinfoactivity">    
+            <intent-filter>    
+                <action android:name="com.app.xiao2.MyInfoActivity"/>    
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>    
+        </activity>    
+        <activity android:name="com.app.xiao2.MyCustomerActivity"    
+                  android:label="@string/myinfoactivity">    
+            <intent-filter>    
+                <action android:name="com.app.xiao2.MyCustomerActivity"/>    
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>    
+        </activity>    
+        <activity android:name="com.app.xiao2.MyPointsActivity"    
+                  android:label="@string/myinfoactivity">    
+            <intent-filter>    
+                <action android:name="com.app.xiao2.MyPointsActivity"/>    
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>    
+        </activity>    
+        <activity android:name="com.app.xiao2.MySettingActivity"    
+                  android:label="@string/myinfoactivity">    
+            <intent-filter>    
+                <action android:name="com.app.xiao2.MySettingActivity"/>    
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>    
+        </activity> 
+         <activity android:name="com.app.xiao2.Conversation" 
+             android:theme="@android:style/Theme.Holo.NoActionBar"    
+                  android:label="@string/conversation">    
+            <intent-filter>    
+                <action android:name="com.app.xiao2.Conversation"/>    
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>    
+        </activity>    
+        
+         <activity android:name="com.app.xiao2.GetQuestions" 
+             android:theme="@android:style/Theme.Holo.Light.NoActionBar"    
+                  >    
+            <intent-filter>    
+                <action android:name="com.app.xiao2.GetQuestions"/>    
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>    
+        </activity>  
+         <activity android:name="com.app.xiao2.DoAccount" 
+             android:theme="@android:style/Theme.Holo.Light.NoActionBar"    
+                  >    
+            <intent-filter>    
+                <action android:name="com.app.xiao2.DoAccount"/>    
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>    
+        </activity>  
+        <activity android:name="com.app.xiao2.AccountSet" 
+             android:theme="@android:style/Theme.Holo.Light.NoActionBar"    
+                  >    
+            <intent-filter>    
+                <action android:name="com.app.xiao2.AccountSet"/>    
+                <category android:name="android.intent.category.DEFAULT"/>    
+            </intent-filter>    
+        </activity> 
+    </application>
+
+</manifest>

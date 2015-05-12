@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gray">#ff808080</color>
+    <color name="azure">#ff007fff</color>
+    <color name="gold">#ffffd700</color>   
+</resources>

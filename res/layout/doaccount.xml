@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4" >
+
+    <LinearLayout
+        android:id="@+id/doacc_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/acbar_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/doacc_back"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+         
+            android:clickable="true"
+            android:src="@drawable/con_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.17"
+            android:gravity="center"
+            android:text="张三"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    
+       <RelativeLayout
+           android:id="@+id/doacc_content"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:layout_below="@id/doacc_status"
+           android:background="@drawable/doacc_bg"
+           android:focusable="true"  
+           android:focusableInTouchMode="true" >
+
+           <EditText
+               android:id="@+id/doacc_nums"
+               android:layout_width="70dp"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentTop="true"
+               android:layout_marginLeft="50dp"
+               android:layout_marginTop="93dp"
+               android:ems="10"
+               android:hint="个数" >
+
+             
+           </EditText>
+
+           <TextView
+               android:id="@+id/doacc_sumprice"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignBottom="@+id/doacc_nums"
+               android:layout_marginLeft="34dp"
+               android:layout_toRightOf="@+id/doacc_nums"
+               android:text="￥900.00"
+               android:textColor="#ff0000"
+               android:textSize="30sp" />
+
+           <ImageView
+               android:id="@+id/doacc_type"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_alignLeft="@+id/doacc_nums"
+               android:layout_below="@+id/doacc_nums"
+               android:layout_marginTop="14dp"
+               android:src="@drawable/doacc_type" />  
+           <ImageView
+               android:id="@+id/doacc_info"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_alignLeft="@+id/doacc_type"
+               android:layout_below="@+id/doacc_type"
+               android:layout_marginTop="30dp"
+               android:src="@drawable/doacc_info" />
+
+           <ImageView
+               android:id="@+id/doacc_addr"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_alignLeft="@+id/doacc_info"
+               android:layout_below="@+id/doacc_info"
+               android:layout_marginTop="36dp"
+               android:src="@drawable/doacc_addr" />
+
+           <EditText
+               android:id="@+id/doacc_remarks"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:layout_above="@+id/doacc_addr"
+               android:layout_marginLeft="14dp"
+               android:layout_toRightOf="@+id/doacc_info"
+               android:ems="10"
+               android:hint="备注" />
+
+           <ImageView
+               android:id="@+id/doacc_cam"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_alignBottom="@+id/doacc_remarks"
+               android:layout_toRightOf="@+id/doacc_remarks"
+               android:src="@drawable/doacc_cam" />
+
+           <Spinner
+               android:id="@+id/spinner"
+               android:layout_width="160dp"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/doacc_remarks"
+               android:layout_below="@+id/doacc_nums" />
+
+           <Button
+               android:id="@+id/doacc_save"
+               android:layout_width="70dp"
+               android:layout_height="40dp"
+               android:layout_alignRight="@+id/doacc_remarks"
+               android:layout_below="@+id/doacc_addr"
+               android:layout_marginTop="18dp"
+               android:background="@drawable/doacc_save"
+               android:text="保存"
+               android:textSize="20sp"
+               android:textColor="#ff7f00" />
+
+           <Button
+               android:id="@+id/doacc_consave"
+               android:layout_width="70dp"
+               android:layout_height="40dp"
+               android:layout_alignBaseline="@+id/doacc_save"
+               android:layout_alignBottom="@+id/doacc_save"
+               android:layout_alignLeft="@+id/doacc_addr"
+               android:layout_marginLeft="22dp"
+               android:background="@drawable/doacc_save"
+               android:clickable="false"
+               android:text="接着记"
+               android:textColor="#c0c0c0"
+               android:textSize="20sp" />
+
+       </RelativeLayout>
+
+</RelativeLayout>
+

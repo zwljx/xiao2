@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">xiao2</string>
+     <string name="myinfoactivity">myinfo</string>
+      <string name="conversation">conversation</string>
+     <string-array name="drawer_item">
+        <item>我的信息</item>
+        <item>我的客户</item>
+        <item>我的积分</item>
+        <item>设置</item>
+     </string-array>
+
+</resources>
